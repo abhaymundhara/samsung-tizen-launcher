@@ -1,4 +1,4 @@
-# Home — Samsung Tizen launcher
+# Samsung Tizen launcher
 
 A personal, remote-first home screen for Samsung Tizen TVs. It is a normal
 signed Tizen web app: it does not root the TV, replace the operating system, or
