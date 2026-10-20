@@ -10,6 +10,12 @@ and clear remote focus of [CleanFrame](https://github.com/nthnclrk/CleanFrame),
 then adapts it for this launcher and TV. The focused app's icon is shown once
 in the large right-side preview; list rows remain text-only.
 
+![Chromium browser preview of the launcher home screen](docs/assets/launcher-preview.png)
+
+This is a real browser capture of the built UI at 1920×1080. Tizen-only app
+icon paths are unavailable in a desktop browser, so the letter fallback is
+shown; on the TV, the preview reads the installed app icon.
+
 ## Preview and install
 
 1. Install Tizen Studio and create your own TV certificate profile.
@@ -61,6 +67,8 @@ rebuild/reinstall; the build script copies those images into the package.
 
 The wallpaper advances at the configured interval (60 seconds by default),
 and catches up when Home becomes visible again.
+
+![Launcher architecture: remote, Tizen APIs, apps, and local preferences](docs/assets/launcher-architecture.png)
 
 ## Add a custom JavaScript widget
 
