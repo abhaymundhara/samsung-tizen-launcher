@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+<meta name="viewport" content="width=1920, height=1080">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <div id="wallA" class="wallp on"></div><div id="wallB" class="wallp"></div>
+  <header id="top">
+    <div id="welcome"><div id="greet"></div><div id="date"></div></div>
+    <div id="clock">9:41</div>
+    <div id="util">
+      <div class="ub" id="ub0"></div>
+      <div class="ub" id="ub1"></div>
+      <div class="ub" id="ub2"></div>
+    </div>
+  </header>
+  <main id="rows"><div id="rowsInner"></div></main>
+  <main id="dock" class="hidden"><div id="dockShell"><div id="dockTrack"></div></div></main>
+  <aside id="preview" aria-live="polite">
+    <div class="preview-kicker" id="previewKicker">NOW SELECTED</div>
+    <div id="previewIcon" class="home-icon preview-icon"><span>TV</span></div>
+    <div id="previewName">Choose an app</div>
+    <div id="previewMeta">Your pinned apps appear here</div>
+    <div id="widgetRoot"></div>
+  </aside>
+  <div id="all" class="hidden">
+    <div class="overlay-top"><div><div class="eyebrow">LIBRARY</div><div id="allTitle">All apps</div></div><div id="allHint">OK to open <span>·</span> Back to close</div></div>
+    <div id="allGrid"><div id="allGridIn"></div></div>
+    <aside id="allPreview">
+      <div class="preview-kicker">SELECTED APP</div>
+      <div id="allPreviewIcon" class="home-icon preview-icon"><span>TV</span></div>
+      <div id="allPreviewName">Choose an installed app</div>
+      <div id="allPreviewId"></div>
+      <div id="allActions">
+        <button id="pinButton" type="button">Pin to Home</button>
+        <button id="removeUrlButton" class="hidden" type="button">Remove website</button>
+        <button id="urlButton" type="button">Add a website</button>
+      </div>
+      <div id="allActionHint">Green: pin / unpin <span>·</span> Red: remove website <span>·</span> Blue: add website</div>
+    </aside>
+  </div>
+  <div id="settings" class="hidden">
+    <div id="settingsPanel">
+      <div class="settings-head"><div><div class="eyebrow">APPEARANCE</div><h1>Home settings</h1></div><div id="settingsHint">Left / right to change <span>·</span> Back to close</div></div>
+      <div id="settingsRows"></div>
+    </div>
+  </div>
+  <div id="editor" class="hidden">
+    <div id="editorPanel">
+      <div class="eyebrow" id="editorEyebrow">PERSONALIZE</div>
+      <h2 id="editorTitle">Edit</h2>
+      <form id="editorForm" autocomplete="off">
+        <label id="editorNameLabel" for="editorName">Name</label>
+        <input id="editorName" type="text" maxlength="40" autocapitalize="words" />
+        <label id="editorUrlLabel" for="editorUrl">Website URL</label>
+        <input id="editorUrl" type="url" inputmode="url" maxlength="500" />
+        <div class="editor-actions">
+          <button id="editorSave" type="submit">Save</button>
+          <button id="editorCancel" type="button">Cancel</button>
+        </div>
+      </form>
+      <div class="editor-hint">Select a field to use the TV keyboard <span>·</span> Back to cancel</div>
+    </div>
+  </div>
+  <input id="wallpaperFile" class="hidden" type="file" accept="image/jpeg,image/png,image/webp" />
+  <div id="toast"></div>
+</div>
+<script src="config.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

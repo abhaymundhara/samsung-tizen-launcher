@@ -1,0 +1,26 @@
+# Build artifacts
+build/
+
+# OS-specific files
+.DS_Store
+
+# Dependencies (if node_modules or similar is added later)
+node_modules/
+
+# IDE / Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Package files (compiled outputs)
+*.wgt
+*.xml.tmp
+
+# Environment scripts (if they contain sensitive info)
+scripts/env.sh
+
+# Temporary files
+*.tmp
+*.cache
